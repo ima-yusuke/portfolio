@@ -9,19 +9,19 @@ function NavMenu(){
             <nav style={{display:'none'}}>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/portfolio/">Home</Link>
                     </li>  
                     <li>
-                        <Link to="/nav">Nav</Link>
+                        <Link to="/portfolio/nav">Nav</Link>
                     </li>   
                     <li>
-                        <Link to="/load">Nav</Link>
+                        <Link to="/portfolio/load">Nav</Link>
                     </li>
                     <li>
-                        <Link to="/about">Nav</Link>
+                        <Link to="/portfolio/about">Nav</Link>
                     </li>    
                     <li>
-                        <Link to="/work">Nav</Link>
+                        <Link to="/portfolio/work">Nav</Link>
                     </li>      
                 </ul>
             </nav> 

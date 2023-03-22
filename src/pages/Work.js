@@ -77,7 +77,7 @@ function Work(){
     return(
         <>
             <section className="aboutBar">
-                <Link to="/nav"><i class="fa fa-solid fa-bars"></i></Link>
+                <Link to="/portfolio/nav"><i class="fa fa-solid fa-bars"></i></Link>
             </section>
             <h1 className="workh1">Wrok page</h1>
 

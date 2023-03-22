@@ -32,9 +32,9 @@ function Nav({setPage,page}){
             <section className="navpage">
                 <nav className="navmenu">
                     <ul>
-                        <li><Link to="/load" onClick={navOtherPage}>Home</Link></li>
-                        <li><Link to="/load" onClick={navOtherPage}>About</Link></li>
-                        <li><Link to="/load" onClick={navOtherPage}>Work</Link></li>
+                        <li><Link to="/portfolio/load" onClick={navOtherPage}>Home</Link></li>
+                        <li><Link to="/portfolio/load" onClick={navOtherPage}>About</Link></li>
+                        <li><Link to="/portfolio/load" onClick={navOtherPage}>Work</Link></li>
                         <li><a>Contact</a></li>
                     </ul>
                 </nav>

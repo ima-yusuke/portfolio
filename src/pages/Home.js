@@ -11,7 +11,7 @@ function Home(){
         <>
             <Particle></Particle>
             <section className="bar">
-                <Link to="/nav"><i class="fa fa-solid fa-bars"></i></Link>
+                <Link to="/portfolio/nav"><i class="fa fa-solid fa-bars"></i></Link>
             </section>
             <div className="homepage">
                 <h1 className="name">Yusuke Imai</h1>
