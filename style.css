@@ -1,0 +1,518 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.bar{
+    display: flex;
+    justify-content: right;
+    padding-right: 1%;
+}
+
+.bar i{
+    font-size: 40px;
+}
+
+.name{
+    color: whitesmoke;
+}
+
+.homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 1vh;
+    height: 680px;
+}
+
+.homepage h1{
+    font-size: 60px;
+}
+
+.homenav{
+    display: flex;
+    column-gap: 2vh;
+    width: 100%
+}
+
+i{
+    color: white;
+}
+
+.homesection{
+    display: flex;
+    justify-content: right;
+    padding-right: 2%;
+    height: 50px;
+}
+
+
+.homesection a{
+    font-size: 30px;
+}
+
+/* ---------Nav page--------- */
+
+.navmenu a{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.navmenu{
+    padding-left: 3%;
+}
+
+.navmenu ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.navmenu li{
+    text-decoration: none;
+}
+
+.navpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    height: 700px;
+    margin: 50px;
+}
+
+.navpage button{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 50%;
+}
+
+/* -----Loading page------ */
+
+.load{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3vh;
+    height: 800px;
+    padding-top: 10%;
+    /* background-color:#fff */
+}
+  
+  #load {
+    position:absolute;
+    width:600px;
+    height:36px;
+    left:50%;
+    top:40%;
+    margin-left:-300px;
+    overflow:visible;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+  }
+  
+  #load div {
+    position:absolute;
+    width:20px;
+    height:36px;
+    font-size: 80px;
+    opacity:0;
+    font-family:Helvetica, Arial, sans-serif;
+    animation:move 2s linear infinite;
+    -o-animation:move 2s linear infinite;
+    -moz-animation:move 2s linear infinite;
+    -webkit-animation:move 2s linear infinite;
+    transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    color:#35C4F0;
+  }
+  
+  #load div:nth-child(2) {
+    animation-delay:0.2s;
+    -o-animation-delay:0.2s;
+    -moz-animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+  }
+  #load div:nth-child(3) {
+    animation-delay:0.4s;
+    -o-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+  }
+  #load div:nth-child(4) {
+    animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+  }
+  #load div:nth-child(5) {
+    animation-delay:0.8s;
+    -o-animation-delay:0.8s;
+    -moz-animation-delay:0.8s;
+    -webkit-animation-delay:0.8s;
+  }
+  #load div:nth-child(6) {
+    animation-delay:1s;
+    -o-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -webkit-animation-delay:1s;
+  }
+  #load div:nth-child(7) {
+    animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+  }
+  
+  @keyframes move {
+    0% {
+      left:0;
+      opacity:0;
+    }
+    35% {
+      left: 41%; 
+      -moz-transform:rotate(0deg);
+      -webkit-transform:rotate(0deg);
+      -o-transform:rotate(0deg);
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -moz-transform:rotate(0deg); 
+      -webkit-transform:rotate(0deg); 
+      -o-transform:rotate(0deg);
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -moz-transform:rotate(-180deg); 
+      -webkit-transform:rotate(-180deg); 
+      -o-transform:rotate(-180deg); 
+      transform:rotate(-180deg);
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -moz-transform:rotate(0deg); 
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -moz-transform:rotate(0deg); 
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -moz-transform:rotate(-180deg); 
+      transform:rotate(-180deg);
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -webkit-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -webkit-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%;
+      -webkit-transform:rotate(-180deg); 
+      transform:rotate(-180deg); 
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -o-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -o-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -o-transform:rotate(-180deg); 
+      transform:rotate(-180deg); 
+      opacity:0;
+    }
+  }
+
+/* -----About Page----- */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15vh;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url("./image/pic-02.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.aboutTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  position: relative;
+}
+
+.aboutTop article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.aboutTop img{
+  width: 20vh;
+  height: 20vh;
+  z-index: 2;
+}
+
+.aboutBar{
+  display: flex;
+  justify-content: right;
+  padding-right: 1%;
+}
+
+.aboutBar i{
+  color: black;
+  font-size: 40px;;
+}
+
+.about p{
+  font-size: 40px;
+}
+
+.aboutProfile{
+  background-color: rgb(234,234,234);
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.aboutProfile h3{
+  font-size: 60px;
+  padding-left: 150px;
+  font-style: italic;
+  letter-spacing: .1em;
+  
+}
+
+.profileBorder{
+  border-left: 3px solid black;
+  margin-left: 5%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7vh;
+}
+
+
+.profileBorder article{
+  display: flex;
+}
+
+.profileBorder div{
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 calc(50% - 43.5vw);
+  margin-top: 1%;
+}
+
+.profileBorder h3,
+.profileBorder p,
+.profileBorder h4,
+.profileBorder ul{
+  padding-left: 150px;
+  width: 60%;
+  line-height: 1.8;
+}
+
+.profileBorder article>aside{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+
+.profileBorder aside>aside{
+  padding-left: 150px;
+  display: flex;
+  column-gap: 3vh;
+}
+
+.profileBorder aside i{
+  color: black;
+  font-size: 20px;
+}
+ 
+article aside{
+  width: 100%;
+}
+
+article aside article{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+
+.profileBorder li{
+  display: flex;
+}
+
+.aboutFooter{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  margin-top: 80px;
+}
+
+#aboutanime{
+  width: 10000px;
+}
+
+#aboutanime article{
+  width: 10000px;
+}
+
+/* -----work page ----- */
+
+.workh1{
+  text-align: center;
+}
+
+.work{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 5vh;
+  column-gap: 8vh;
+}
+
+.work figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work figure:hover{
+  cursor: pointer;
+}
+
+.work img{
+  width:48vh;
+  height: 35vh;
+}
+
+.modalbox{
+  display: flex;
+  column-gap: 5vh;
+  height: 500px;
+}
+
+.modalbox aside>img{
+  width: 20vh;
+  height: 10vh;
+}
+
+.modalpicture{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5vh;
+}
+
+.modalpicture aside{
+  display: flex;
+  justify-content: center;
+}
+
+.modalbox img{
+  width: 40vh;
+  height: 25vh;
+}
+
+.modalbox i{
+  color: black;
+  font-size: 40px;
+}
+
+.modalgit{
+  display: flex;
+  column-gap: 2vh;
+}
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
