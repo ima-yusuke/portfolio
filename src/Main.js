@@ -12,13 +12,13 @@ function Main(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path='/portfolio/' element={<NavMenu/>}>
-                    <Route index element={<Home/>}/>
+                {/* <Route path='/portfolio/' element={<NavMenu/>}> */}
+                    {/* <Route index element={<Home/>}/> */}
                     <Route path='/portfolio/about' element={<About />}/>
                     <Route path='/portfolio/work' element={<Work />}/>
                     <Route path='/portfolio/nav' element={<Nav setPage={setPage} page={page}/>}/> 
                     <Route path='/portfolio/load' element={<Load page={page}/>}/> 
-                </Route>
+                {/* </Route> */}
             </Routes>
         </BrowserRouter>
         // <Home></Home>
