@@ -432,6 +432,7 @@ article aside article{
 
 .workh1{
   text-align: center;
+  padding-bottom: 5%;
 }
 
 .work{
@@ -457,6 +458,15 @@ article aside article{
   height: 35vh;
 }
 
+.work img:hover{
+  transform: scale(1.1);
+  transition:all 0.3s;
+}
+
+.work p{
+  margin-top: 4%;
+}
+
 .modalbox{
   display: flex;
   column-gap: 5vh;
@@ -469,16 +479,17 @@ article aside article{
 }
 
 .modalpicture{
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 5vh;
 }
 
-.modalpicture aside{
+.modalpicture>aside>aside{
   display: flex;
-  justify-content: center;
+  column-gap: 2vh;
+  padding-bottom: 10%;
 }
 
 .modalbox img{
@@ -496,7 +507,11 @@ article aside article{
   column-gap: 2vh;
 }
 
+.slideImg{
+  padding-left: 10%;
+  width: 150vh;
 
+}
 
 
 
