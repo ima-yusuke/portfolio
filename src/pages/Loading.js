@@ -8,11 +8,11 @@ function Load({page}){
     const goNav=()=>{
         console.log(page)
         if(page=="home"){
-            navigate("/")
+            navigate("/portfolio/")
         }else if(page=="about"){
-            navigate("/about")
+            navigate("/portfolio/about")
         }else if(page=="work"){
-            navigate("/work")
+            navigate("/portfolio/work")
         }
     }
 

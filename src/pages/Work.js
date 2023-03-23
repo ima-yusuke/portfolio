@@ -4,11 +4,16 @@ import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper';
+import { EffectCoverflow } from "swiper";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+import "swiper/css/thumbs";
+import "swiper/css/free-mode";
+import "swiper/css/effect-coverflow";
+import { FreeMode,Thumbs } from "swiper";
 
 function Work(){
     const [show, setShow] = useState(false)
@@ -61,6 +66,8 @@ function Work(){
                 default:
                     break
             }
+        }else{
+            return "pic-01.jpg"
         }
       
     }
@@ -72,6 +79,8 @@ function Work(){
           </SwiperSlide>
         );
     }
+
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
     
     
     return(
@@ -79,7 +88,7 @@ function Work(){
             <section className="aboutBar">
                 <Link to="/portfolio/nav"><i class="fa fa-solid fa-bars"></i></Link>
             </section>
-            <h1 className="workh1">Wrok page</h1>
+            <h1 className="workh1">Work page</h1>
 
             <section className="work">
                 {dataArray.map((val,idx)=>{
@@ -110,25 +119,28 @@ function Work(){
                         </article>
                         <article className="modalpicture">
                             <aside>
-                                {msg!=null?
-                                    msg.gallry.map((val)=>{
-                                        return <img src={require(`../img/${val}`)}></img>
-                                    })
-                                :null}
+                                <aside>
+                                    {msg!=null?
+                                        msg.gallry.map((val)=>{
+                                            return <img src={require(`../img/${val}`)}></img>
+                                        })
+                                    :null}
+                                </aside>
                                 <Swiper
                                     modules={[Navigation, Pagination, Autoplay]}
                                     slidesPerView={1}
                                     navigation
-                                    autoplay={{ delay: 2000 }}
+                                    autoplay={{ delay: 2000,disableOnInteraction: false,}}
                                     pagination={{ clickable: true }}
                                 >
-                                    {/* {createSlide()}
                                     {createSlide()}
                                     {createSlide()}
-                                    {createSlide()} */}
+                                    {createSlide()}
                                 </Swiper>
+                                
                             </aside>
                         </article>
+                        
                     </section>
                 </Modal.Body>
                 <Modal.Footer>
