@@ -88,7 +88,7 @@ function Work(){
             <section className="aboutBar">
                 <Link to="/portfolio/nav"><i class="fa fa-solid fa-bars"></i></Link>
             </section>
-            <h1 className="workh1">Work page</h1>
+            <h1 className="workh1">Work page manko</h1>
 
             <section className="work">
                 {dataArray.map((val,idx)=>{
