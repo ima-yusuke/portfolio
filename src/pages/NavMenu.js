@@ -23,6 +23,9 @@ function NavMenu(){
                     <li>
                         <Link to="/portfolio/work">Nav</Link>
                     </li>      
+                    <li>
+                        <Link to="/portfolio/contact">Nav</Link>
+                    </li>      
                 </ul>
             </nav> 
 

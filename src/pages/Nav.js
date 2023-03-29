@@ -12,6 +12,8 @@ function Nav({setPage,page}){
             navigate("/about")
         }else if(page=="work"){
             navigate("/work")
+        }else if(page=="contact"){
+            navigate("/contact")
         }
     }
 
@@ -23,6 +25,8 @@ function Nav({setPage,page}){
             setPage("about")
         }else if(page.target.innerText=="Work"){
             setPage("work")
+        }else if(page.target.innerText=="Contact"){
+            setPage("contact")
         }
     }
 
@@ -35,7 +39,7 @@ function Nav({setPage,page}){
                         <li><Link to="/portfolio/load" onClick={navOtherPage}>Home</Link></li>
                         <li><Link to="/portfolio/load" onClick={navOtherPage}>About</Link></li>
                         <li><Link to="/portfolio/load" onClick={navOtherPage}>Work</Link></li>
-                        <li><a>Contact</a></li>
+                        <li><Link to="/portfolio/load" onClick={navOtherPage}>Contact</Link></li>
                     </ul>
                 </nav>
                 <button onClick={backHome}>X</button>
