@@ -36,17 +36,17 @@ function Work(){
   const [msg,setMsg] = useState(null)
     
   let dataArray = [
-      {"id":1,"src":'pic-02.png',"title":"test1","gallry":["pic-02.png","pic-03.png","pic-04.png"],"text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?"},
+      {"id":1,"src":'pic-02.png',"title":"test1","gallry":["pic-02.png","pic-03.png","pic-04.png"],"text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?","skills":["Vue.js","JavaScript"]},
       {"id":2,"src":'pic-05.png',"title":"test2","gallry":["pic-05.png","pic-06.png","pic-07.png"],
-      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore? "},
+      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore? ","skills":["JavaScript","jQuery"]},
       {"id":3,"src":'pic-08.png',"title":"test3","gallry":["pic-08.png","pic-09.png","pic-10.png"],
-      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?"},
+      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?","skills":["React","JavaScript"]},
       {"id":4,"src":'pic-13.png',"title":"test4","gallry":["pic-11.png","pic-12.png","pic-13.png"],
-      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?"},
+      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?","skills":["PHP"]},
       {"id":5,"src":'pic-03.png',"title":"test5","gallry":["pic-04.png","pic-03.png","pic-03.png"],
-      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?"},
+      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?","skills":["PHP"]},
       {"id":6,"src":'pic-04.png',"title":"test6","gallry":["pic-03.png","pic-02.png","pic-04.png"],
-      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?"},
+      "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae optio nulla sequi aliquam velit expedita dolorem debitis cum laborum perspiciatis sint quis quaerat ullam iusto id officia nisi, veniam at. Ipsam provident omnis illum doloribus! Voluptatem libero harum doloremque, in repellat ipsa voluptas culpa placeat necessitatibus error reprehenderit expedita nihil reiciendis ullam deleniti distinctio magnam natus velit odit inventore?","skills":["PHP"]},
     ]
 
     let slideIdx = 0;
@@ -110,6 +110,16 @@ function Work(){
                         <article>
                             <p>{msg!=null?msg.title:null}</p>
                             <p>{msg!=null?msg.text:null}</p>
+                            <br></br>
+                            <hr></hr>
+                            <br></br>
+                            <p>Main Languages : 
+                                {msg!=null?
+                                        msg.skills.map((val)=>{
+                                            return <span>{val}</span>
+                                        })
+                                    :null}
+                            </p>
                             <aside className="modalgit">
                                 <a href="https://github.com/ima-yusuke">
                                     <i className="fa fa-brands fa-github"></i>

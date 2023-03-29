@@ -13,6 +13,8 @@ function Load({page}){
             navigate("/portfolio/about")
         }else if(page=="work"){
             navigate("/portfolio/work")
+        }else if(page=="contact"){
+            navigate("/portfolio/contact")
         }
     }
 
