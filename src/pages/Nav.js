@@ -7,13 +7,13 @@ function Nav({setPage,page}){
     const navigate = useNavigate()
     const backHome=()=>{
         if(page=="home"){
-            navigate("/")
+            navigate("/portfolio/")
         }else if(page=="about"){
-            navigate("/about")
+            navigate("/portfolio/about")
         }else if(page=="work"){
-            navigate("/work")
+            navigate("/portfolio/work")
         }else if(page=="contact"){
-            navigate("/contact")
+            navigate("/portfolio/contact")
         }
     }
 

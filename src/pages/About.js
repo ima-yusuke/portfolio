@@ -38,7 +38,7 @@ function About(){
                     <AnimationOnScroll  animateIn="animate__fadeInLeftBig">
                       <h2>Frontend Developer</h2>
                     </AnimationOnScroll>            
-
+                    <p>Scroll</p>
                     
                 </section>
 
