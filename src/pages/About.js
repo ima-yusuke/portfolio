@@ -28,8 +28,9 @@ function About(){
                             />
                         </article>
                         <img src={require('../img/pic-01.jpg')}></img>
-                        
                     </section>
+                    <br></br>
+                    <p>Scroll</p>
                    
                     <AnimationOnScroll animateIn="animate__tada">
                     <p>Yusuke Imai</p>
@@ -38,7 +39,7 @@ function About(){
                     <AnimationOnScroll  animateIn="animate__fadeInLeftBig">
                       <h2>Frontend Developer</h2>
                     </AnimationOnScroll>            
-                    <p>Scroll</p>
+                    
                     
                 </section>
 
